@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hallway_fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a120e"/>
+      <stop offset="100%" stop-color="#030504"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#hallway_fade)"/>
+  <!-- Perspective Corridor Lines -->
+  <!-- Ceiling -->
+  <polygon points="0,0 1920,0 1180,440 740,440" fill="#0d1f17" stroke="#134e4a" stroke-width="2"/>
+  <!-- Left Wall -->
+  <polygon points="0,0 740,440 740,780 0,1080" fill="#061c14" stroke="#042f2e" stroke-width="3"/>
+  <!-- Right Wall -->
+  <polygon points="1920,0 1180,440 1180,780 1920,1080" fill="#061c14" stroke="#042f2e" stroke-width="3"/>
+  <!-- Floor -->
+  <polygon points="0,1080 740,780 1180,780 1920,1080" fill="#04120d" stroke="#0f766e" stroke-width="4"/>
+  <!-- Distant Bulkhead Door -->
+  <rect x="780" y="480" width="360" height="300" rx="8" fill="#020806" stroke="#14b8a6" stroke-width="6"/>
+  <rect x="880" y="520" width="160" height="90" fill="#134e4a" stroke="#2dd4bf" stroke-width="3"/>
+  <text x="960" y="575" fill="#a7f3d0" font-family="'IBM Plex Mono', monospace" font-size="20" text-anchor="middle" font-weight="bold" letter-spacing="4">SECTOR 04</text>
+  <!-- Overhead Flickering Fluorescent Tube -->
+  <line x1="880" y1="120" x2="1040" y2="120" stroke="#a7f3d0" stroke-width="12"/>
+  <line x1="880" y1="120" x2="1040" y2="120" stroke="#ffffff" stroke-width="4"/>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <radialGradient id="spotlight" cx="0.5" cy="0.4" r="0.5">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.4"/>
+      <stop offset="40%" stop-color="#ca8a04" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="wedges" width="60" height="60" patternUnits="userSpaceOnUse">
+      <polygon points="0,0 30,60 60,0" fill="#0f1219" stroke="#05070a" stroke-width="2"/>
+      <polygon points="30,60 60,0 60,60" fill="#181d28" stroke="#05070a" stroke-width="2"/>
+      <polygon points="0,0 0,60 30,60" fill="#131722" stroke="#05070a" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <!-- Anechoic Acoustic Wedge Walls -->
+  <rect width="1920" height="1080" fill="url(#wedges)"/>
+  <!-- Floor Grid -->
+  <polygon points="200,850 1720,850 1920,1080 0,1080" fill="#07090e" stroke="#1e293b" stroke-width="3"/>
+  <!-- Suspended Vintage Condenser Microphone -->
+  <g transform="translate(960, 480)">
+    <line x1="0" y1="-480" x2="0" y2="0" stroke="#475569" stroke-width="6"/>
+    <!-- Shockmount ring -->
+    <circle cx="0" cy="60" r="45" fill="none" stroke="#94a3b8" stroke-width="6"/>
+    <circle cx="0" cy="60" r="32" fill="#0f172a" stroke="#cbd5e1" stroke-width="4"/>
+    <!-- Mic capsule -->
+    <rect x="-18" y="25" width="36" height="70" rx="8" fill="#334155" stroke="#f1f5f9" stroke-width="3"/>
+    <!-- Cable dropping down -->
+    <path d="M 0 100 Q 40 300 120 450" stroke="#0f172a" stroke-width="8" fill="none"/>
+  </g>
+  <!-- Spotlight Cone -->
+  <polygon points="960,0 520,1080 1400,1080" fill="url(#spotlight)"/>
+</svg>

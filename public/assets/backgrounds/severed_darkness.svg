@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <rect width="1920" height="1080" fill="#000000"/>
+  <!-- CRT Scanline Noise -->
+  <line x1="0" y1="320" x2="1920" y2="320" stroke="#38bdf8" stroke-width="4" opacity="0.8"/>
+  <line x1="0" y1="740" x2="1920" y2="740" stroke="#f43f5e" stroke-width="3" opacity="0.6"/>
+  <line x1="0" y1="540" x2="1920" y2="540" stroke="#ffffff" stroke-width="8" opacity="0.9"/>
+</svg>

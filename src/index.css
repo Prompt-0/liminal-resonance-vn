@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #030508;
+    color: #e2e8f0;
+    font-family: 'Spectral', serif;
+    user-select: none;
+    overflow: hidden;
+  }
+}
+
+/* CRT & GLITCH ANIMATIONS */
+@keyframes scanlines {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(100%); }
+}
+
+@keyframes screenFlicker {
+  0% { opacity: 0.98; }
+  50% { opacity: 1; }
+  52% { opacity: 0.92; }
+  54% { opacity: 1; }
+  80% { opacity: 0.96; }
+  100% { opacity: 0.99; }
+}
+
+@keyframes glitchTear {
+  0% { clip-path: inset(40% 0 61% 0); transform: skew(0.3deg); }
+  20% { clip-path: inset(92% 0 1% 0); transform: skew(-0.8deg); }
+  40% { clip-path: inset(10% 0 80% 0); transform: skew(0.6deg); }
+  60% { clip-path: inset(65% 0 20% 0); transform: skew(-0.4deg); }
+  80% { clip-path: inset(25% 0 58% 0); transform: skew(0.9deg); }
+  100% { clip-path: inset(40% 0 61% 0); transform: skew(0deg); }
+}
+
+.crt-scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.4) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.03)
+  );
+  background-size: 100% 4px, 6px 100%;
+}
+
+.screen-flicker {
+  animation: screenFlicker 0.15s infinite;
+}
+
+.glitch-tear-active {
+  animation: glitchTear 0.3s infinite steps(2, start);
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-mono-plex {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.font-spectral {
+  font-family: 'Spectral', serif;
+}
